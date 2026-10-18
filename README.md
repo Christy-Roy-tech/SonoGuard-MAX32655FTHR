@@ -85,8 +85,8 @@ data/       small sample WAVs (links to public datasets, not copies)
 ## Milestones
 
 - [x] Board received, preloaded BLE demo verified with the LightBlue app
-- [ ] Toolchain set up, `Hello_World` running with UART output
-- [ ] Own firmware flashed (LED blink)
+- [x] Toolchain set up, `Hello_World` running with UART output
+- [x] Own firmware flashed (LED blink)
 - [ ] Codec configured over I2C, mic audio captured to SD as WAV
 - [ ] Offline detector prototype in Python, evaluated on public data and own recordings
 - [ ] Detector running on-device on live audio
