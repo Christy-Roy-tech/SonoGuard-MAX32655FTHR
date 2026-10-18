@@ -1,0 +1,34 @@
+# ---------- Build output (firmware) ----------
+build/
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.d
+*.a
+*.lst
+ 
+# ---------- Editor and tool settings ----------
+# These contain your Windows user name and local paths.
+.vscode/
+ 
+# ---------- Python ----------
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+ 
+# ---------- Large datasets (link to them in the readme instead) ----------
+data/raw/
+data/datasets/
+ 
+# ---------- Private files (invoice, bank or payment details) ----------
+private/
+ 
+# ---------- Operating system files ----------
+Thumbs.db
+desktop.ini
+.DS_Store
+ 
