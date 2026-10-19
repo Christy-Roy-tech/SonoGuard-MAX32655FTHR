@@ -26,13 +26,14 @@
 
 #include <i2c.h>
 #include <mxc_device.h>
+#include "mxc_delay.h"
 #include <stddef.h>
 #include <stdint.h>
 
 //-----------------------------------------------------------------------------
 // Defines
 //-----------------------------------------------------------------------------
-#define I2C_FREQ 400000
+#define I2C_FREQ 100000
 
 #define MAX9867_ADDR 0x18
 
@@ -146,24 +147,30 @@ static mxc_i2c_req_t i2c_req;
 static int reg_write(uint8_t reg, uint8_t val)
 {
     uint8_t buf[2] = { reg, val };
+    int result;
 
     i2c_req.tx_buf = buf;
     i2c_req.tx_len = sizeof(buf);
     i2c_req.rx_len = 0;
 
-    return MXC_I2C_MasterTransaction(&i2c_req);
+    result = MXC_I2C_MasterTransaction(&i2c_req);
+    MXC_Delay(MXC_DELAY_MSEC(2));
+    return result;
 }
 
 static int reg_read(uint8_t reg, uint8_t *dest)
 {
     uint8_t buf[1] = { reg };
+    int result;
 
     i2c_req.tx_buf = buf;
     i2c_req.tx_len = sizeof(buf);
     i2c_req.rx_buf = dest;
     i2c_req.rx_len = 1;
 
-    return MXC_I2C_MasterTransaction(&i2c_req);
+    result = MXC_I2C_MasterTransaction(&i2c_req);
+    MXC_Delay(MXC_DELAY_MSEC(2));
+    return result;
 }
 
 int max9867_status(void)

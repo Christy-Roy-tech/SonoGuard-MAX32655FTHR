@@ -124,7 +124,7 @@ int ext_flash_init(void)
     if (err == E_NO_ERROR) {
         printf("Erase complete.\n");
     } else {
-        printf("Erase failed with error: %d", err);
+        printf("Erase failed with error: %d\n", err);
     }
 
     Ext_Flash_Quad(1);

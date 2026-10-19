@@ -1,0 +1,25 @@
+set log_output to "flash.log"
+Info : CMSIS-DAP: SWD supported
+Info : CMSIS-DAP: FW Version = 1.0
+Info : CMSIS-DAP: Interface Initialised (SWD)
+Info : SWCLK/TCK = 0 SWDIO/TMS = 1 TDI = 0 TDO = 0 nTRST = 0 nRESET = 0
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 2000 kHz
+Info : SWD DPIDR 0x2ba01477
+Info : [max32xxx.cpu] Cortex-M4 r0p1 processor detected
+Info : [max32xxx.cpu] target has 6 breakpoints, 4 watchpoints
+Info : [max32xxx.cpu] Examination succeed
+Info : [max32xxx.cpu] starting gdb server on pipe
+[max32xxx.cpu] halted due to breakpoint, current mode: Thread 
+xPSR: 0x01000000 pc: 0x000001b4 msp: 0x2000c000
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : accepting 'gdb' connection from pipe
+Warn : Prefer GDB command "target extended-remote :pipe" instead of "target remote :pipe"
+Warn : No RTOS could be auto-detected!
+[max32xxx.cpu] halted due to breakpoint, current mode: Thread 
+xPSR: 0x01000000 pc: 0x000001b4 msp: 0x2000c000
+Info : Padding image section 0 at 0x1000d1c8 with 8 bytes
+[max32xxx.cpu] halted due to breakpoint, current mode: Thread 
+xPSR: 0x01000000 pc: 0x000001b4 msp: 0x2000c000
+Info : dropped 'gdb' connection
