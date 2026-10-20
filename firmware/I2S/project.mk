@@ -26,6 +26,15 @@
 
 # Add your config here!
 BOARD = FTHR_Apps_P1
+# Link the Codec driver
+VPATH += $(MAXIM_PATH)/Libraries/MiscDrivers/Codec
+IPATH += $(MAXIM_PATH)/Libraries/MiscDrivers/Codec
+
+# Enable SD Card and File System
+LIB_SDHC=1
+
+# Enable CMSIS-DSP for the FFT math
+LIB_CMSIS_DSP=1
 # Add compiler flags to enable source navigation in ELF File Explorer
 PROJ_CFLAGS += -fdump-rtl-expand
 PROJ_CFLAGS += -fdump-rtl-dfinish
