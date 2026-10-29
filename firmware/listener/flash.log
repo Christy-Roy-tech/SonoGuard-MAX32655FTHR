@@ -1,0 +1,3 @@
+set log_output to "flash.log"
+Error: unable to find a matching CMSIS-DAP device
+
