@@ -1,0 +1,10 @@
+our progress is this: i have bought the max 32655  board installed the code fusion SDK in vscode used the example codes to set up the sudio code andused 0x08 codec and I2c use the sound from the inbuilt microphone  and used a prebuilt example to save the recorded sample to sd card . visualised the audio file in audacity and founf the frequency range should be  48000 hz for proper tempo  built logic to capture live audio and a ping pong saving feature without increasing memory and fft to transofrm the audio from time domain to frequency domain then the noise is cancelled and peak at 1250  is detected by using a tonal ratio which calculates the required energy to total energy .
+
+
+I think whats pending : improve the current GUI using pyside6 [DONE]
+make sure the algorithm detects alert sounds from youtube without detecting noise and random sounds ,,[almost done(doing)]
+loggingthis to the GUI using the low power BLE 
+- i dont have a LIPO battery how to check the fuel gauge and show it in the GUI...
+Alert sound through the headphone jack on detection, with a mute window so the board does not hear itself. Tell me if this is done.
+- Measurements and the results table: accuracy, false alarms per hour, delay, memory use, and battery runtime.
+- Documentation: update the readme, take a demo video, and make the final forum post. Include only claims you have measured.
