@@ -1,7 +1,0 @@
-pc_time,board_ms,type,freq,tone,detail,verdict,simulated
-2026-10-30 00:09:03,11584,PULSED,1406,64,2,unreviewed,False
-2026-10-30 00:13:55,30741,SIREN,1406,98,375,unreviewed,False
-2026-10-30 00:14:19,53994,SIREN,1265,99,375,unreviewed,False
-2026-10-30 00:15:10,104981,SIREN,1125,86,375,unreviewed,False
-2026-10-30 00:21:23,478464,PULSED,984,64,2,unreviewed,False
-2026-10-30 00:21:49,503893,PULSED,1031,69,2,unreviewed,False
