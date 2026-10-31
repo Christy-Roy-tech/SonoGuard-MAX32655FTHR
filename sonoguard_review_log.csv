@@ -1,0 +1,3 @@
+pc_time,board_ms,type,freq,tone,detail,verdict,simulated
+2026-10-31 15:22:30,171370,PULSED,1500,53,2,real,False
+2026-10-31 15:22:32,173440,PULSED,1500,64,2,real,False

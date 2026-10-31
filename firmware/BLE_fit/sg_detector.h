@@ -39,7 +39,7 @@
 #define SG_PULSE_MAX_FRAMES 40   /* 853 ms: a longer tone is a whistle or a machine hum */
 #define SG_GAP_MIN_FRAMES   5    /* 107 ms  */
 #define SG_GAP_MAX_FRAMES   40   /* 853 ms  */
-#define SG_PULSES_REQUIRED  2    /* pulses in a row, same pitch */
+#define SG_PULSES_REQUIRED  3    /* pulses in a row, same pitch */
 #define SG_FREQ_TOL_BINS    2    /* +/- 94 Hz between pulses */
 
 /* ---------- PRESCRIBED: sweeping sirens (wail / yelp) ---------- */
